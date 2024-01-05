@@ -29,7 +29,9 @@ public class App {
 			
 //			examples.openWebPageUsingNavigation(browser);
 			
-			examples.handleBackwordNavigation(browser);
+//			examples.handleBackwordNavigation(browser);
+			
+			examples.handleMultipleWindows(browser);
 			
 		}else {
 			System.out.println("Browser" +browser+ "you enterd not supported");
