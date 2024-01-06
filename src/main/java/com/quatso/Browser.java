@@ -1,9 +1,14 @@
 package com.quatso;
 
+import java.sql.Driver;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
+
+import net.bytebuddy.implementation.bytecode.ShiftRight;
 
 public class Browser {
 	
@@ -28,6 +33,8 @@ public class Browser {
 			
 		else
 			System.out.println("Browser not supported" + browser);
+			driver.manage().timeouts().pageLoadTimeout(120,TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 		return driver;
 

@@ -14,8 +14,11 @@ public class App {
 		
 //		WebElemetnPart1  examples = new WebElemetnPart1();
 		
-		WebElementPart2 examples = new WebElementPart2();
+//		WebElementPart2 examples = new WebElementPart2();
 		
+//		WebTables examples = new WebTables();
+		
+		WebDriverWaits examples = new WebDriverWaits();
 		
 		if (browser.equalsIgnoreCase("firefox") || browser.equalsIgnoreCase("safari") || browser.equalsIgnoreCase("chrome")){
 //			examples.findElementByName(browser);
@@ -31,7 +34,15 @@ public class App {
 			
 //			examples.handleBackwordNavigation(browser);
 			
-			examples.handleMultipleWindows(browser);
+//			examples.handleMultipleWindows(browser);
+			
+//			examples.getSingleElementFromWebTables(browser);
+			
+//			examples.getAllElementFromWebTables(browser);
+			
+//			examples.fluentWait(browser);
+			
+			examples.WebDriverWait(browser);
 			
 		}else {
 			System.out.println("Browser" +browser+ "you enterd not supported");
